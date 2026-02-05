@@ -1,6 +1,6 @@
 // src/pages/AdminHome.js
 import React, { useState, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
 import busService from "../api/busService";
 import studentService from "../api/studentService";
@@ -8,7 +8,7 @@ import driverService from "../api/driverService";
 import Navbar from "../Components/Navbar";
 
 const AdminHome = () => {
-  const navigate = useNavigate();
+  
   const [stats, setStats] = useState({
     totalBuses: 0,
     totalStudents: 0,
